@@ -1,0 +1,51 @@
+\documentclass{TheLatteFactor}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\renewcommand*{\songti}{\CJKfamily{zhsong}}
+\renewcommand*{\heiti}{\CJKfamily{zhhei}}
+\renewcommand*{\kaishu}{\CJKfamily{zhkai}}
+\renewcommand*{\fangsong}{\CJKfamily{zhfs}}
+
+\begin{document}
+    \include{封面/封面}
+
+    \setcounter{secnumdepth}{0}
+    \pagestyle{tocblankstyle}
+    \pagenumbering{Roman}
+    \include{chapter/前言} \cleardoublepage
+    \setcounter{page}{1}
+
+    % 目录
+    \setcounter{secnumdepth}{0}
+    \pagestyle{tocstyle}
+    \pagenumbering{Roman}
+    \tableofcontents
+    \cleardoublepage
+    \setcounter{secnumdepth}{1}
+    \renewcommand{\thesection}{}
+
+    % 正文
+    \pagestyle{docstyle}
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+
+    
+    \include{chapter/1人生到底该做什么？} \cleardoublepage
+    \include{chapter/2想买却买不起的烦恼} \cleardoublepage
+    \include{chapter/3你比自己想像的更富有} \cleardoublepage
+    \include{chapter/4先付钱给自已} \cleardoublepage
+    \include{chapter/5踏出前的质疑} \cleardoublepage
+    \include{chapter/6好习惯胜过列预算} \cleardoublepage
+    \include{chapter/7打肿脸充胖子} \cleardoublepage
+    \include{chapter/8金钱迷思} \cleardoublepage
+    \include{chapter/9拿铁因子} \cleardoublepage
+    \include{chapter/10现在就过富足的生活} \cleardoublepage
+    \include{chapter/11真正有钱人的消费模式} \cleardoublepage
+    \include{chapter/12不留遗憾，尽兴生活} \cleardoublepage
+    \include{chapter/13财务自由，关键不在赚多少} \cleardoublepage
+    \include{chapter/14享受红利的日子} \cleardoublepage
+    \include{chapter/附录} \cleardoublepage
+    \include{chapter/后记} \cleardoublepage
+    \include{chapter/谢辞} \cleardoublepage
+
+\end{document}
